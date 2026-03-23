@@ -4,7 +4,7 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 
 type Prop = {
-  hero?: boolean
+  hero: boolean
 }
 
 const App: React.FC<Prop> = ({ hero = true }: Prop) => {
