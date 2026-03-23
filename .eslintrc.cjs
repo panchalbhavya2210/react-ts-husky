@@ -1,38 +1,38 @@
 module.exports = {
   root: true,
   env: { browser: true, es2021: true },
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
-  plugins: ["react", "@typescript-eslint", "react-hooks", "import"],
+  plugins: ['react', '@typescript-eslint', 'react-hooks', 'import'],
   extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:import/recommended",
-    "prettier",
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:import/recommended',
+    'prettier',
   ],
   settings: {
-    react: { version: "detect" },
+    react: { version: 'detect' },
   },
   rules: {
-    "react/react-in-jsx-scope": "off",
+    '@typescript-eslint/no-unused-vars': 'off',
+    'unused-imports/no-unused-imports': 'error',
+    'import/no-unresolved': 'off',
+    '@typescript-eslint/no-explicit-any': 'warn',
 
-    // strictness
-    "@typescript-eslint/no-unused-vars": ["error"],
-    "@typescript-eslint/no-explicit-any": "warn",
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
 
-    // import hygiene
-    "import/order": [
-      "error",
+    'import/order': [
+      'error',
       {
-        groups: [["builtin", "external", "internal"]],
-        "newlines-between": "always",
-        alphabetize: { order: "asc" },
+        groups: [['builtin', 'external', 'internal']],
+        'newlines-between': 'always',
+        alphabetize: { order: 'asc' },
       },
     ],
   },
-};
+}
