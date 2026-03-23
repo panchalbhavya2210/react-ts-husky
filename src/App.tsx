@@ -10,7 +10,7 @@ type Prop = {
 
 const App: React.FC<Prop> = ({
   hero = "wass"
-}) => {
+}: Prop) => {
   const [count, setCount] = useState(0)
   console.log(hero)
   return (
