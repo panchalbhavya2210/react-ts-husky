@@ -4,9 +4,15 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+type Prop = {
+  hero?: boolean
+}
 
+const App: React.FC<Prop> = ({
+  hero = "wass"
+}) => {
+  const [count, setCount] = useState(0)
+  console.log(hero)
   return (
     <>
       <section id="center">
