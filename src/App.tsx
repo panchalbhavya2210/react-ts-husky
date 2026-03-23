@@ -10,6 +10,10 @@ type Prop = {
 const App: React.FC<Prop> = ({ hero = true }: Prop) => {
   const [count, setCount] = useState(0)
   console.log(hero)
+
+  const x = 1
+  console.log(x)
+
   return (
     <>
       <section id="center">
