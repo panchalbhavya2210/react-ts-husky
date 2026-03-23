@@ -5,7 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 type Prop = {
-  hero?: boolean
+  hero: boolean
 }
 
 const App: React.FC<Prop> = ({
@@ -17,7 +17,7 @@ const App: React.FC<Prop> = ({
     <>
       <section id="center">
         <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
+          <img src={hero} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
